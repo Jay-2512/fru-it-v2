@@ -68,8 +68,6 @@ class Stage3:
             opmsg = 'No decay'
             print('No decay')
 
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
 
         return img, opmsg
     
@@ -136,8 +134,6 @@ class Stage3:
             opmsg = 'No decay'
             print('No decay')
 
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
 
         return img, opmsg
 
@@ -204,7 +200,5 @@ class Stage3:
             opmsg = 'No decay'
             print('No decay')
 
-        if cv2.waitKey(0) == ord('q'):
-            cv2.destroyAllWindows()
         
         return img, opmsg
