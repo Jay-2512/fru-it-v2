@@ -151,7 +151,7 @@ class Stage3:
         hsv = cv2.cvtColor(denoised, cv2.COLOR_BGR2HSV)
 
         # display HSV image
-        cv2.imshow('HSV Conveted Image', hsv)
+        # cv2.imshow('HSV Conveted Image', hsv)
 
         print(f'Papaya ripeness is {papaya_ripeness}')
 
