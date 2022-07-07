@@ -8,7 +8,7 @@ class Stage1:
     def detect_fruit(self, file_path):
 
         #load stage 1 model
-        model = load_model('Models\FRU-MDL-S1v1.h5', compile=False)
+        model = load_model('./Models/FRU-MDL-S1v1.h5', compile=False)
 
         data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
         file_path = file_path
@@ -41,7 +41,7 @@ class Stage2:
     def detect_banana_ripeness(self, file_path):
 
         # load stage 2.1 model
-        model = load_model('Models\FRU-MDL-S2.1v1.h5', compile=False)
+        model = load_model('./Models/FRU-MDL-S2.1v1.h5', compile=False)
 
         data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
         file_path = file_path
@@ -71,7 +71,7 @@ class Stage2:
     def detect_mango_ripeness(self, file_path):
 
         # load stage 2.2 model
-        model = load_model('Models\FRU-MDL-S2.2v1.h5', compile=False)
+        model = load_model('./Models/FRU-MDL-S2.2v1.h5', compile=False)
 
         data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
         file_path = file_path
@@ -101,7 +101,7 @@ class Stage2:
     def detect_papaya_ripeness(self, file_path):
 
         # load stage 2.3 model
-        model = load_model('Models\FRU-MDL-S2.3v1.h5', compile=False)
+        model = load_model('./Models/FRU-MDL-S2.3v1.h5', compile=False)
 
         data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
         file_path = file_path
