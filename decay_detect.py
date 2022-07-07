@@ -142,7 +142,7 @@ class Stage3:
 
         img = cv2.resize(img, (500, 500))
 
-        cv2.imshow('RGB RAW Image', img)
+        # cv2.imshow('RGB RAW Image', img)
 
         # denoising the image
         denoised = cv2.fastNlMeansDenoisingColored(img, None, 10, 10, 7, 21)
