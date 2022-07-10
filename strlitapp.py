@@ -18,7 +18,7 @@ stage3 = Stage3()
 
 
 # page title config
-st.set_page_config(page_title="FRU-IT", page_icon="./img/favicon.png")
+st.set_page_config(page_title="FRU-IT", page_icon="./Img/favicon.png")
 
 #opening custom css
 # with open('./Styles/styles.css') as f:
