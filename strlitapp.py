@@ -21,8 +21,8 @@ stage3 = Stage3()
 st.set_page_config(page_title="FRU-IT", page_icon="./img/favicon.png")
 
 #opening custom css
-with open('./Styles/styles.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+# with open('./Styles/styles.css') as f:
+#         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # title
 with st.container():
