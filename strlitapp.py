@@ -9,14 +9,20 @@ from essentials import Stage1, Stage2
 from decay_detect import Stage3
 
 
+
 # initializing the objects
 stage1 = Stage1()
 stage2 = Stage2()
 stage3 = Stage3()
 
+
+
 # page title config
 st.set_page_config(page_title="FRU-IT", page_icon="./img/favicon.png")
 
+#opening custom css
+with open('./Styles/styles.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # title
 with st.container():
@@ -24,7 +30,7 @@ with st.container():
     #     # FRU-IT 🥭
     #     ### Your personal fruit companion
     # """)
-    st.markdown("<h1 style='text-align: center; color: white;'>FRUIT 🥭</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: white;'>FRU-IT 🥭</h1>", unsafe_allow_html=True)
 
     st.markdown("<h3 style='text-align: center; color: gray;'>Your personal fruit companion</h2>", unsafe_allow_html=True)
 
