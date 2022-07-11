@@ -9,7 +9,7 @@ from misc import Misc
 from essentials import Stage1, Stage2
 from decay_detect import Stage3
 
-
+# Just ML code not to be used by the webapp
 
 # loading the model
 model = keras.models.load_model('Models\FRU-MDL-S1v1.h5', compile=False)
